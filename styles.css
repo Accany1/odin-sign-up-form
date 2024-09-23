@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'norse_bold';
+    src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',system-ui,-apple-system, BlinkMacSystemFont,Arial, 'Helvetica Neue', sans-serif;
+    width: 100%;
+    background-color:#F9FAFB
+}
+
+.main {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.3fr 2fr;
+    height: 100%;
+    width: 100%;
+}
+
+img {
+    width: 80px;
+    height: auto;
+}
+
+.odin-background {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;  
+    background:#fff url(halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    height: 100%;
+}
+
+.title {
+    display: flex;
+    margin-top: 180px;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    justify-content: center;
+    padding: 30px 0px;
+}
+
+.title-text {
+    color: white;
+    font-size: 5em;
+    font-weight: 300;
+    align-self:center;
+    font-family: 'norse_bold',system-ui,-apple-system, BlinkMacSystemFont,Arial, 'Helvetica Neue', sans-serif;
+}
+
+.credits {
+    color: white;
+    font-size: 0.7em;
+    font-weight: 300;
+    margin-top:auto;
+    align-self:center;
+    margin-bottom: 10px;
+}
+
+form {
+    padding: 20px 40px;
+    position:relative;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgb(210, 210, 210);
+}
+
+h3 {
+    margin: 0;
+    font-weight:600;
+}
+
+.top-text {
+    padding: 40px;
+}
+
+label {
+    font-size: 0.8em;
+}
+
+input {
+    width: 70%;
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    padding: 7px;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 2px 2px 2px rgb(210, 210, 210);
+}
+
+input[type='password']:invalid {
+    border: 1px solid #D55C5F;
+    color: #D55C5F;
+    box-shadow: none;
+}
+
+input:invalid + span::before {
+    content: "* Passwords do not match";
+    color: #D55C5F;
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0;
+  }
+
+span {
+    white-space: pre;
+}
+
+.login-link {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+fieldset {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.second-header {
+    margin-top: 30px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+button {
+    margin: 40px;
+    font-size: 16px;
+    font-weight: bold;
+  
+    color: #FFFFFF;
+    background-color: #596D48;
+  
+    border: none;
+    border-radius: 5px;
+  
+    padding: 15px 40px;
+    cursor: pointer;
+}
+
+p {
+    margin: 0px 40px;
+}
+
+.photo-link {
+    color: white;
+}
